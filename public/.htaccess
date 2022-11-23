@@ -1,0 +1,13 @@
+# Ceci est le fichier de configuration du serveur Apache
+
+DirectoryIndex index.php
+
+# Activation de la réécriture du moteur
+RewriteEngine On
+
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)$ /index.php

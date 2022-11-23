@@ -1,0 +1,27 @@
+{
+    "name": "user/auth",
+    "description": "Mise en pratique des notions apprises en php en impl\u0000mentant l'architecture MVC",
+    "type": "project",
+    "license": "DWWM",
+    "authors": [
+        {
+            "name": "Jean-Claude AZIAHA",
+            "email": "aziaha.formations@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": ["src/z/helpers.php"]
+    },
+    "scripts": {
+        "serve" : [
+            "php -S localhost:8000 -d display_errors=1 -t public/"
+        ]
+    },
+    "config": {
+        "process-timeout": 0
+    },
+    "require-dev": {
+        "symfony/var-dumper": "6.2.x-dev"
+    }
+}

@@ -1,0 +1,6 @@
+# Ceci est le fichier de configuration du serveur Apache
+
+# Activation de la réécriture du moteur
+RewriteEngine On
+
+    RewriteRule ^(.*)$ public/
